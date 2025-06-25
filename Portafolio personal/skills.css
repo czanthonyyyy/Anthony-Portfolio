@@ -1,0 +1,105 @@
+.skills-bg {
+    background: linear-gradient(120deg, #a0e0ff 0%, #f8d030 100%);
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+.skills-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 80vh;
+}
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    margin-top: 2rem;
+}
+.skill-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: repeating-linear-gradient(135deg, #fff 0 4px, #a0e0ff 4px 8px);
+    border: 6px double #3a3a6d;
+    box-shadow: 0 0 16px #f8d03088, 0 0 0 4px #fff inset;
+    padding: 1.2rem 1.5rem;
+    border-radius: 12px;
+    min-width: 110px;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+.skill-item:hover {
+    transform: scale(1.08) rotate(-2deg);
+    box-shadow: 0 0 32px #f85888cc, 0 0 0 4px #fff inset;
+}
+.skill-sprite {
+    width: 48px;
+    height: 48px;
+    image-rendering: pixelated;
+    margin-bottom: 0.7rem;
+}
+.skill-item span {
+    font-size: 0.9rem;
+    color: #3a3a6d;
+    margin-top: 0.2rem;
+}
+@media (max-width: 900px) {
+    .skills-list {
+        flex-direction: column;
+        gap: 1.2rem;
+        align-items: center;
+    }
+    .skill-item {
+        min-width: 60vw;
+        max-width: 320px;
+    }
+}
+.badges-section {
+    text-align: center;
+    margin-top: 2rem;
+}
+.badges-list {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+}
+.badge-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: repeating-linear-gradient(135deg, #fff 0 4px, #ffe066 4px 8px);
+    border: 4px double #f8d030;
+    box-shadow: 0 0 12px #f8d03088, 0 0 0 4px #fff inset;
+    padding: 0.7rem 1.2rem;
+    border-radius: 10px;
+    min-width: 90px;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+.badge-item:hover {
+    transform: scale(1.08) rotate(-2deg);
+    box-shadow: 0 0 24px #f85888cc, 0 0 0 4px #fff inset;
+}
+.badge-sprite {
+    width: 40px;
+    height: 40px;
+    image-rendering: pixelated;
+    margin-bottom: 0.4rem;
+}
+.badge-item span {
+    font-size: 0.85rem;
+    color: #3a3a6d;
+    margin-top: 0.2rem;
+}
+@media (max-width: 900px) {
+    .badges-list {
+        flex-direction: column;
+        gap: 1.2rem;
+        align-items: center;
+    }
+    .badge-item {
+        min-width: 60vw;
+        max-width: 220px;
+    }
+} 

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anthony | Inicio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="inicio.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body class="inicio-bg">
+    <nav class="pixel-nav">
+        <ul>
+            <li class="active"><a href="index.html">Inicio</a></li>
+            <li><a href="about.html">Sobre mí</a></li>
+            <li><a href="projects.html">Proyectos</a></li>
+            <li><a href="skills.html">Habilidades</a></li>
+            <li><a href="contact.html">Contacto</a></li>
+        </ul>
+    </nav>
+    <main class="inicio-main">
+        <div class="intro-box pixel-border animate-in">
+            <img src="anthony-sprite.png" alt="Anthony Pixel Art" class="pixel-sprite">
+            <h1 class="pixel-title">¡Bienvenido al Mundo de Anthony!</h1>
+            <p class="pixel-subtitle">Presiona Start para continuar</p>
+            <button id="startBtn" class="pixel-btn">Start</button>
+        </div>
+    </main>
+    <div id="loading-screen" class="loading-screen">
+        <img src="img/pokeball-spin.gif" alt="Cargando..." class="pokeball-spin">
+        <span class="loading-text">Cargando...</span>
+    </div>
+    <footer class="pixel-footer">
+        Desarrollado por Anthony. © 2025
+    </footer>
+    <script src="script.js"></script>
+    <script src="inicio.js"></script>
+</body>
+</html>
