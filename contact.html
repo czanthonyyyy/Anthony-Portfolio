@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anthony | Contacto</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="contact.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body class="contact-bg">
+    <nav class="pixel-nav">
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="about.html">Sobre mí</a></li>
+            <li><a href="projects.html">Proyectos</a></li>
+            <li><a href="skills.html">Habilidades</a></li>
+            <li class="active"><a href="contact.html">Contacto</a></li>
+        </ul>
+    </nav>
+    <main class="contact-main">
+        <h1 class="pixel-title">¡Contáctame!</h1>
+        <form class="pokedex-form pixel-border" autocomplete="off">
+            <label for="name">Nombre</label>
+            <input type="text" id="name" name="name" class="pixel-input" required>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" class="pixel-input" required>
+            <label for="message">Mensaje</label>
+            <textarea id="message" name="message" class="pixel-input" rows="4" required></textarea>
+            <button type="submit" class="pixel-btn">Enviar</button>
+        </form>
+        <div id="form-success" class="form-success pixel-border" style="display:none;">¡Mensaje enviado con éxito!</div>
+    </main>
+    <footer class="pixel-footer">
+        Desarrollado por Anthony. © 2025
+    </footer>
+    <div id="loading-screen" class="loading-screen">
+        <img src="img/pokeball-spin.gif" alt="Cargando..." class="pokeball-spin">
+        <span class="loading-text">Cargando...</span>
+    </div>
+    <script src="script.js"></script>
+    <script src="contact.js"></script>
+</body>
+</html> 

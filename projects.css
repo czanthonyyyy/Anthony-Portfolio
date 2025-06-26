@@ -1,0 +1,116 @@
+.projects-bg {
+    background: linear-gradient(135deg, #4fc3f7 0%, #22304a 100%);
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+.projects-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 80vh;
+}
+.projects-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    margin-top: 2rem;
+}
+.project-card {
+    background: repeating-linear-gradient(135deg, #fff 0 4px, #4fc3f7 4px 8px);
+    border: 3px solid #4fc3f7;
+    box-shadow: 0 0 32px #4fc3f788, 0 0 0 8px #22304a inset;
+    width: 260px;
+    text-align: center;
+    transition: transform 0.3s cubic-bezier(0.4,0,0.2,1), box-shadow 0.3s, filter 0.3s;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+.project-card:hover {
+    transform: scale(1.08) rotate(-2deg);
+    box-shadow: 0 0 48px #f85888cc, 0 0 0 8px #fff inset;
+    filter: brightness(1.2) drop-shadow(0 0 8px #f85888);
+    animation: battleEntry 0.6s cubic-bezier(0.4,0,0.2,1);
+}
+@keyframes battleEntry {
+    0% { transform: scale(0.9) rotate(4deg); filter: blur(2px); }
+    60% { transform: scale(1.1) rotate(-3deg); filter: blur(0); }
+    100% { transform: scale(1.08) rotate(-2deg); filter: none; }
+}
+.project-sprite {
+    width: 72px;
+    height: 72px;
+    image-rendering: pixelated;
+    margin-top: 1.2rem;
+}
+.project-title {
+    font-size: 1.1rem;
+    color: #3a3a6d;
+    margin: 1rem 0 0.5rem 0;
+}
+.project-desc {
+    font-size: 0.9rem;
+    color: #222;
+    margin-bottom: 1.2rem;
+    padding: 0 1rem;
+}
+.project-types {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+.type-icon {
+    width: 28px;
+    height: 28px;
+    image-rendering: pixelated;
+}
+.project-attacks {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+    margin-bottom: 0.5rem;
+}
+.attack {
+    display: flex;
+    align-items: center;
+    font-size: 0.85rem;
+    color: #3a3a6d;
+    gap: 0.4rem;
+}
+.attack-icon {
+    width: 18px;
+    height: 18px;
+    image-rendering: pixelated;
+}
+.project-level {
+    font-size: 0.9rem;
+    color: #f85888;
+    margin-bottom: 0.7rem;
+}
+.pokedex-btn {
+    background: #fff;
+    color: #3a3a6d;
+    border: 3px solid #f8d030;
+    box-shadow: 0 2px 0 #b8a038;
+    font-size: 0.9rem;
+    margin-bottom: 0.7rem;
+    transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+}
+.pokedex-btn:hover {
+    background: #f85888;
+    color: #fff;
+    box-shadow: 0 4px 0 #c03028;
+}
+@media (max-width: 900px) {
+    .projects-gallery {
+        flex-direction: column;
+        gap: 1.2rem;
+        align-items: center;
+    }
+    .project-card {
+        width: 90vw;
+        max-width: 320px;
+    }
+} 
