@@ -3,40 +3,96 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Anthony | Sobre mí</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="about.css">
-    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Conoce más sobre Anthony, Desarrollador Full Stack en Ciudad de Panamá.">
+    <title>Sobre Mí | Anthony - Portafolio</title>
+    <!-- Google Fonts: Poppins y Open Sans -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:700,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600&display=swap" rel="stylesheet">
+    <!-- CSS Global y específico -->
+    <link rel="stylesheet" href="global-styles.css">
+    <link rel="stylesheet" href="styles-about.css">
 </head>
-<body class="about-bg">
-    <div id="loading-screen" class="loading-screen">
-        <img src="img/pokeball-spin.gif" alt="Cargando..." class="pokeball-spin">
-        <span class="loading-text">Cargando...</span>
-    </div>
-    <nav class="pixel-nav">
-        <ul>
-            <li><a href="index.html">Inicio</a></li>
-            <li class="active"><a href="about.html">Sobre mí</a></li>
-            <li><a href="projects.html">Proyectos</a></li>
-            <li><a href="skills.html">Habilidades</a></li>
-            <li><a href="contact.html">Contacto</a></li>
-        </ul>
-    </nav>
-    <main class="about-main">
-        <section class="about-box pixel-border animate-in">
-            <img src="anthony-sprite.png" alt="Anthony Pixel Art" class="pixel-sprite">
-            <h1 class="pixel-title">¡Hola! Soy Anthony</h1>
-            <p class="pixel-desc">Programador apasionado por la tecnología, los videojuegos y el desarrollo creativo. Me especializo en crear experiencias web únicas, combinando HTML, CSS, JavaScript, Python, Ruby y Node.js. <br><br> Amo el pixel art, la música retro y los desafíos de código. ¡Listo para nuevas aventuras digitales!</p>
-            <div class="about-sprites">
-                <img src="pokeball-sprite.png" alt="Pokeball" class="decor-sprite">
-                <img src="star-sprite.png" alt="Estrella" class="decor-sprite">
+<body>
+    <header role="banner">
+        <nav class="nav container" aria-label="Navegación principal">
+            <a href="index.html" class="nav__logo" aria-label="Inicio">Anthony</a>
+            <button class="nav__toggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="nav-menu">
+                <span class="nav__hamburguesa"></span>
+            </button>
+            <ul class="nav__menu" id="nav-menu">
+                <li><a href="index.html" class="nav__link">Inicio</a></li>
+                <li><a href="about.html" class="nav__link nav__link--activo" aria-current="page">Sobre Mí</a></li>
+                <li><a href="skills.html" class="nav__link">Habilidades</a></li>
+                <li><a href="projects.html" class="nav__link">Proyectos</a></li>
+                <li><a href="contact.html" class="nav__link">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main role="main">
+        <section class="about container" aria-label="Sobre mí">
+            <img src="anthony-sprite2.png" alt="Foto de Anthony" class="about__foto" loading="lazy">
+            <div class="about__descripcion">
+                <h1>Sobre Mí</h1>
+                <p>¡Hola! Soy Anthony, desarrollador Full Stack con 2 años de experiencia, ubicado en Ciudad de Panamá. Me especializo en desarrollo web moderno con JavaScript y disfruto crear soluciones digitales que impactan positivamente a los usuarios.</p>
+                <p>Creo en el poder del código limpio y las soluciones elegantes. Mi enfoque se centra en crear experiencias digitales que no solo funcionen perfectamente, sino que también deleiten a los usuarios.</p>
+            </div>
+            <div class="about__timeline" aria-label="Trayectoria profesional y educativa">
+                <!-- Timeline visual -->
+                <ul>
+                    <li><strong>2023 - Presente:</strong> Desarrollador Full Stack en StartupTech</li>
+                    <li><strong>2021 - 2023:</strong> Desarrollador Frontend Freelance</li>
+                    <li><strong>2018 - 2021:</strong> Licenciatura en Ingeniería en Sistemas, Universidad de Panamá</li>
+                </ul>
+            </div>
+            <div class="about__cards" aria-label="Intereses y habilidades blandas">
+                <div class="about__card">
+                    <h2>Intereses</h2>
+                    <ul>
+                        <li>Desarrollo web moderno</li>
+                        <li>UI/UX y diseño digital</li>
+                        <li>Aprendizaje continuo</li>
+                        <li>Comunidades tech</li>
+                    </ul>
+                </div>
+                <div class="about__card">
+                    <h2>Filosofía de trabajo</h2>
+                    <p>Trabajo colaborativo, comunicación clara y pasión por la excelencia técnica.</p>
+                </div>
+                <div class="about__card">
+                    <h2>Soft Skills</h2>
+                    <ul>
+                        <li>Resolución de problemas</li>
+                        <li>Trabajo en equipo</li>
+                        <li>Adaptabilidad</li>
+                        <li>Gestión del tiempo</li>
+                    </ul>
+                </div>
             </div>
         </section>
     </main>
-    <footer class="pixel-footer">
-        Desarrollado por Anthony. © 2025
+    <footer role="contentinfo">
+        <div class="footer container">
+            <div class="footer__info">
+                <span>&copy; 2024 Anthony. Todos los derechos reservados.</span>
+                <span class="footer__mensaje">Construido con <span aria-label="corazón" role="img">❤️</span> y código</span>
+            </div>
+            <div class="footer__redes">
+                <a href="#" class="footer__icono" aria-label="LinkedIn" target="_blank" rel="noopener"></a>
+                <a href="#" class="footer__icono" aria-label="GitHub" target="_blank" rel="noopener"></a>
+                <a href="#" class="footer__icono" aria-label="Email" target="_blank" rel="noopener"></a>
+            </div>
+            <nav class="footer__nav" aria-label="Navegación secundaria">
+                <a href="index.html">Inicio</a> · 
+                <a href="about.html">Sobre Mí</a> · 
+                <a href="skills.html">Habilidades</a> · 
+                <a href="projects.html">Proyectos</a> · 
+                <a href="contact.html">Contacto</a>
+            </nav>
+        </div>
     </footer>
-    <script src="script.js"></script>
-    <script src="about.js"></script>
+    <!-- Scripts globales y específicos -->
+    <script src="global-script.js"></script>
+    <script src="script-about.js"></script>
 </body>
 </html> 

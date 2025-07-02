@@ -3,37 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Anthony | Inicio</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="inicio.css">
-    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Portafolio profesional de Anthony, Desarrollador Full Stack en Ciudad de Panamá.">
+    <title>Inicio | Anthony - Portafolio</title>
+    <!-- Google Fonts: Poppins y Open Sans -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:700,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600&display=swap" rel="stylesheet">
+    <!-- CSS Global y específico -->
+    <link rel="stylesheet" href="global-styles.css">
+    <link rel="stylesheet" href="styles-home.css">
 </head>
-<body class="inicio-bg">
-    <nav class="pixel-nav">
-        <ul>
-            <li class="active"><a href="index.html">Inicio</a></li>
-            <li><a href="about.html">Sobre mí</a></li>
-            <li><a href="projects.html">Proyectos</a></li>
-            <li><a href="skills.html">Habilidades</a></li>
-            <li><a href="contact.html">Contacto</a></li>
-        </ul>
-    </nav>
-    <main class="inicio-main">
-        <div class="intro-box pixel-border animate-in">
-            <img src="anthony-sprite.png" alt="Anthony Pixel Art" class="pixel-sprite">
-            <h1 class="pixel-title">¡Bienvenido al Mundo de Anthony!</h1>
-            <p class="pixel-subtitle">Presiona Start para continuar</p>
-            <button id="startBtn" class="pixel-btn">Start</button>
-        </div>
+<body>
+    <header role="banner">
+        <nav class="nav container" aria-label="Navegación principal">
+            <a href="index.html" class="nav__logo" aria-label="Inicio">Anthony</a>
+            <button class="nav__toggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="nav-menu">
+                <span class="nav__hamburguesa"></span>
+            </button>
+            <ul class="nav__menu" id="nav-menu">
+                <li><a href="index.html" class="nav__link nav__link--activo" aria-current="page">Inicio</a></li>
+                <li><a href="about.html" class="nav__link">Sobre Mí</a></li>
+                <li><a href="skills.html" class="nav__link">Habilidades</a></li>
+                <li><a href="projects.html" class="nav__link">Proyectos</a></li>
+                <li><a href="contact.html" class="nav__link">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main role="main">
+        <section class="hero container" aria-label="Presentación principal">
+            <div class="hero__decoracion" aria-hidden="true"></div>
+            <img src="anthony-sprite.png" alt="Foto de perfil de Anthony" class="hero__foto" loading="lazy">
+            <h1 class="hero__titulo">Hola, soy Anthony</h1>
+            <p class="hero__subtitulo" id="typing-subtitle">Desarrollador Full Stack apasionado por crear soluciones innovadoras</p>
+            <div class="hero__cta">
+                <a href="projects.html" class="btn" aria-label="Ver proyectos">Ver mis proyectos</a>
+            </div>
+            <div class="hero__tecnologias" aria-label="Tecnologías principales">
+                <span class="hero__tecnologia"><!-- Icono JS -->JS</span>
+                <span class="hero__tecnologia"><!-- Icono React -->React</span>
+                <span class="hero__tecnologia"><!-- Icono Node.js -->Node.js</span>
+                <span class="hero__tecnologia"><!-- Icono Python -->Python</span>
+            </div>
+        </section>
     </main>
-    <div id="loading-screen" class="loading-screen">
-        <img src="img/pokeball-spin.gif" alt="Cargando..." class="pokeball-spin">
-        <span class="loading-text">Cargando...</span>
-    </div>
-    <footer class="pixel-footer">
-        Desarrollado por Anthony. © 2025
+    <footer role="contentinfo">
+        <div class="footer container">
+            <div class="footer__info">
+                <span>&copy; 2024 Anthony. Todos los derechos reservados.</span>
+                <span class="footer__mensaje">Construido con <span aria-label="corazón" role="img">❤️</span> y código</span>
+            </div>
+            <div class="footer__redes">
+                <a href="#" class="footer__icono" aria-label="LinkedIn" target="_blank" rel="noopener"><!-- LinkedIn SVG --></a>
+                <a href="#" class="footer__icono" aria-label="GitHub" target="_blank" rel="noopener"><!-- GitHub SVG --></a>
+                <a href="#" class="footer__icono" aria-label="Email" target="_blank" rel="noopener"><!-- Email SVG --></a>
+            </div>
+            <nav class="footer__nav" aria-label="Navegación secundaria">
+                <a href="index.html">Inicio</a> · 
+                <a href="about.html">Sobre Mí</a> · 
+                <a href="skills.html">Habilidades</a> · 
+                <a href="projects.html">Proyectos</a> · 
+                <a href="contact.html">Contacto</a>
+            </nav>
+        </div>
     </footer>
-    <script src="script.js"></script>
-    <script src="inicio.js"></script>
+    <!-- Scripts globales y específicos -->
+    <script src="global-script.js"></script>
+    <script src="script-home.js"></script>
 </body>
-</html>
+</html> 

@@ -1,0 +1,72 @@
+/* =============================
+   Estilos Página de Contacto
+   ============================= */
+
+.contact {
+  padding: 3rem 1rem 2rem 1rem;
+  background: var(--blanco);
+  border-radius: var(--borde-redondeado);
+  box-shadow: var(--sombra-suave);
+  margin-top: 2rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contact__formulario {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.contact__campo {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.contact__input, .contact__textarea {
+  padding: 0.7rem 1rem;
+  border: 1px solid var(--verde-principal);
+  border-radius: var(--borde-redondeado);
+  font-size: 1rem;
+  font-family: var(--fuente-cuerpo);
+  transition: border-color 0.3s;
+}
+.contact__input:focus, .contact__textarea:focus {
+  border-color: var(--verde-oscuro);
+  outline: none;
+}
+
+.contact__boton {
+  align-self: flex-end;
+  min-width: 140px;
+}
+
+.contact__info {
+  margin-top: 2rem;
+  text-align: center;
+  color: var(--gris-medio);
+}
+
+.contact__redes {
+  display: flex;
+  justify-content: center;
+  gap: 1.2rem;
+  margin-top: 1rem;
+}
+
+.contact__icono {
+  font-size: 2rem;
+  color: var(--verde-oscuro);
+  transition: color 0.3s;
+}
+.contact__icono:hover {
+  color: var(--verde-principal);
+}
+
+@media (max-width: 480px) {
+  .contact {
+    padding: 1.5rem 0.3rem;
+  }
+} 

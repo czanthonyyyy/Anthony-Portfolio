@@ -1,0 +1,100 @@
+/* =============================
+   Estilos Página de Proyectos
+   ============================= */
+
+.projects {
+  padding: 3rem 1rem 2rem 1rem;
+  background: var(--verde-muy-claro);
+  border-radius: var(--borde-redondeado);
+  box-shadow: var(--sombra-suave);
+  margin-top: 2rem;
+}
+
+.projects__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.projects__card {
+  background: var(--blanco);
+  border-radius: var(--borde-redondeado);
+  box-shadow: var(--sombra-suave);
+  padding: 1.5rem 1.2rem;
+  transition: var(--transicion-suave);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+.projects__card:hover {
+  box-shadow: 0 8px 16px rgba(0,0,0,0.13);
+  transform: translateY(-6px) scale(1.03);
+}
+
+.projects__imagen {
+  width: 100%;
+  max-width: 320px;
+  border-radius: var(--borde-redondeado);
+  margin-bottom: 1rem;
+  box-shadow: var(--sombra-suave);
+}
+
+.projects__titulo {
+  font-size: 1.2rem;
+  color: var(--verde-oscuro);
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+.projects__tecnologias {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.projects__badge {
+  background: var(--verde-secundario);
+  color: var(--verde-oscuro);
+  border-radius: 16px;
+  padding: 0.3rem 1rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+  box-shadow: var(--sombra-suave);
+}
+
+.projects__enlaces {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.projects__enlace {
+  background: var(--verde-principal);
+  color: var(--blanco);
+  border-radius: 8px;
+  padding: 0.5rem 1.2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: var(--transicion-suave);
+  box-shadow: var(--sombra-suave);
+}
+.projects__enlace:hover {
+  background: var(--verde-oscuro);
+}
+
+/* Responsive grid */
+@media (max-width: 1024px) {
+  .projects__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 768px) {
+  .projects__grid {
+    grid-template-columns: 1fr;
+  }
+} 

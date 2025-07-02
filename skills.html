@@ -3,87 +3,109 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Anthony | Habilidades</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="skills.css">
-    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Habilidades y tecnologías dominadas por Anthony, Desarrollador Full Stack en Ciudad de Panamá.">
+    <title>Habilidades | Anthony - Portafolio</title>
+    <!-- Google Fonts: Poppins y Open Sans -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:700,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600&display=swap" rel="stylesheet">
+    <!-- CSS Global y específico -->
+    <link rel="stylesheet" href="global-styles.css">
+    <link rel="stylesheet" href="styles-skills.css">
 </head>
-<body class="skills-bg">
-    <div id="loading-screen" class="loading-screen">
-        <img src="img/pokeball-spin.gif" alt="Cargando..." class="pokeball-spin">
-        <span class="loading-text">Cargando...</span>
-    </div>
-    <nav class="pixel-nav">
-        <ul>
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="about.html">Sobre mí</a></li>
-            <li><a href="projects.html">Proyectos</a></li>
-            <li class="active"><a href="skills.html">Habilidades</a></li>
-            <li><a href="contact.html">Contacto</a></li>
-        </ul>
-    </nav>
-    <main class="skills-main">
-        <h1 class="pixel-title">Habilidades</h1>
-        <section class="skills-list">
-            <div class="skill-item">
-                <img src="html-sprite.png" alt="HTML" class="skill-sprite">
-                <span>HTML</span>
-            </div>
-            <div class="skill-item">
-                <img src="css-sprite.png" alt="CSS" class="skill-sprite">
-                <span>CSS</span>
-            </div>
-            <div class="skill-item">
-                <img src="js-sprite.png" alt="JavaScript" class="skill-sprite">
-                <span>JavaScript</span>
-            </div>
-            <div class="skill-item">
-                <img src="python-sprite.png" alt="Python" class="skill-sprite">
-                <span>Python</span>
-            </div>
-            <div class="skill-item">
-                <img src="ruby-sprite.png" alt="Ruby" class="skill-sprite">
-                <span>Ruby</span>
-            </div>
-            <div class="skill-item">
-                <img src="nodejs-sprite.png" alt="Node.js" class="skill-sprite">
-                <span>Node.js</span>
-            </div>
-            <div class="skill-item">
-                <img src="git-sprite.png" alt="Git" class="skill-sprite">
-                <span>Git</span>
-            </div>
-            <div class="skill-item">
-                <img src="react-sprite.png" alt="React" class="skill-sprite">
-                <span>React</span>
-            </div>
-        </section>
-        <section class="badges-section">
-            <h2 class="pixel-title" style="font-size:1.1rem; margin-top:2rem;">Insignias</h2>
-            <div class="badges-list">
-                <div class="badge-item">
-                    <img src="img/badge-fullstack.png" alt="Full-stack" class="badge-sprite">
-                    <span>Full-stack</span>
+<body>
+    <header role="banner">
+        <nav class="nav container" aria-label="Navegación principal">
+            <a href="index.html" class="nav__logo" aria-label="Inicio">Anthony</a>
+            <button class="nav__toggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="nav-menu">
+                <span class="nav__hamburguesa"></span>
+            </button>
+            <ul class="nav__menu" id="nav-menu">
+                <li><a href="index.html" class="nav__link">Inicio</a></li>
+                <li><a href="about.html" class="nav__link">Sobre Mí</a></li>
+                <li><a href="skills.html" class="nav__link nav__link--activo" aria-current="page">Habilidades</a></li>
+                <li><a href="projects.html" class="nav__link">Proyectos</a></li>
+                <li><a href="contact.html" class="nav__link">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main role="main">
+        <section class="skills container" aria-label="Habilidades principales">
+            <h1>Habilidades</h1>
+            <div class="skills__categorias">
+                <div class="skills__categoria">
+                    <h2 class="skills__titulo">Lenguajes de Programación</h2>
+                    <div class="skills__progreso"><div class="skills__progreso-barra" data-valor="90" style="width:0%"></div></div>
+                    <span class="skills__badge">JavaScript</span>
+                    <span class="skills__badge">Python</span>
+                    <span class="skills__badge">Java</span>
                 </div>
-                <div class="badge-item">
-                    <img src="img/badge-frontend.png" alt="Front-end" class="badge-sprite">
-                    <span>Front-end</span>
+                <div class="skills__categoria">
+                    <h2 class="skills__titulo">Frontend</h2>
+                    <div class="skills__progreso"><div class="skills__progreso-barra" data-valor="85" style="width:0%"></div></div>
+                    <span class="skills__badge">HTML5</span>
+                    <span class="skills__badge">CSS3</span>
+                    <span class="skills__badge">React</span>
+                    <span class="skills__badge">Vue.js</span>
                 </div>
-                <div class="badge-item">
-                    <img src="img/badge-backend.png" alt="Back-end" class="badge-sprite">
-                    <span>Back-end</span>
+                <div class="skills__categoria">
+                    <h2 class="skills__titulo">Backend</h2>
+                    <div class="skills__progreso"><div class="skills__progreso-barra" data-valor="80" style="width:0%"></div></div>
+                    <span class="skills__badge">Node.js</span>
+                    <span class="skills__badge">Express</span>
+                    <span class="skills__badge">Django</span>
                 </div>
-                <div class="badge-item">
-                    <img src="img/badge-pokemon.png" alt="Pokémon Fan" class="badge-sprite">
-                    <span>Pokémon Fan</span>
+                <div class="skills__categoria">
+                    <h2 class="skills__titulo">Bases de Datos</h2>
+                    <div class="skills__progreso"><div class="skills__progreso-barra" data-valor="75" style="width:0%"></div></div>
+                    <span class="skills__badge">MySQL</span>
+                    <span class="skills__badge">MongoDB</span>
+                    <span class="skills__badge">PostgreSQL</span>
+                </div>
+                <div class="skills__categoria">
+                    <h2 class="skills__titulo">Herramientas</h2>
+                    <div class="skills__progreso"><div class="skills__progreso-barra" data-valor="70" style="width:0%"></div></div>
+                    <span class="skills__badge">Git</span>
+                    <span class="skills__badge">Docker</span>
+                    <span class="skills__badge">AWS</span>
+                </div>
+                <div class="skills__categoria">
+                    <h2 class="skills__titulo">Metodologías</h2>
+                    <div class="skills__progreso"><div class="skills__progreso-barra" data-valor="65" style="width:0%"></div></div>
+                    <span class="skills__badge">Agile</span>
+                    <span class="skills__badge">SCRUM</span>
+                </div>
+                <div class="skills__categoria">
+                    <h2 class="skills__titulo">Diseño</h2>
+                    <div class="skills__progreso"><div class="skills__progreso-barra" data-valor="60" style="width:0%"></div></div>
+                    <span class="skills__badge">UI/UX</span>
+                    <span class="skills__badge">Figma</span>
                 </div>
             </div>
         </section>
     </main>
-    <footer class="pixel-footer">
-        Desarrollado por Anthony. © 2025
+    <footer role="contentinfo">
+        <div class="footer container">
+            <div class="footer__info">
+                <span>&copy; 2024 Anthony. Todos los derechos reservados.</span>
+                <span class="footer__mensaje">Construido con <span aria-label="corazón" role="img">❤️</span> y código</span>
+            </div>
+            <div class="footer__redes">
+                <a href="#" class="footer__icono" aria-label="LinkedIn" target="_blank" rel="noopener"></a>
+                <a href="#" class="footer__icono" aria-label="GitHub" target="_blank" rel="noopener"></a>
+                <a href="#" class="footer__icono" aria-label="Email" target="_blank" rel="noopener"></a>
+            </div>
+            <nav class="footer__nav" aria-label="Navegación secundaria">
+                <a href="index.html">Inicio</a> · 
+                <a href="about.html">Sobre Mí</a> · 
+                <a href="skills.html">Habilidades</a> · 
+                <a href="projects.html">Proyectos</a> · 
+                <a href="contact.html">Contacto</a>
+            </nav>
+        </div>
     </footer>
-    <script src="script.js"></script>
-    <script src="skills.js"></script>
+    <!-- Scripts globales y específicos -->
+    <script src="global-script.js"></script>
+    <script src="script-skills.js"></script>
 </body>
 </html> 

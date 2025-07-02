@@ -1,0 +1,72 @@
+/* =============================
+   Estilos Página de Habilidades
+   ============================= */
+
+.skills {
+  padding: 3rem 1rem 2rem 1rem;
+  background: var(--blanco);
+  border-radius: var(--borde-redondeado);
+  box-shadow: var(--sombra-suave);
+  margin-top: 2rem;
+}
+
+.skills__categorias {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.skills__categoria {
+  background: var(--verde-muy-claro);
+  border-radius: var(--borde-redondeado);
+  padding: 1.2rem 1rem;
+  min-width: 220px;
+  max-width: 320px;
+  box-shadow: var(--sombra-suave);
+  margin-bottom: 1rem;
+}
+
+.skills__titulo {
+  font-size: 1.3rem;
+  color: var(--verde-oscuro);
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+/* Barras de progreso */
+.skills__progreso {
+  background: var(--verde-muy-claro);
+  border-radius: 20px;
+  height: 16px;
+  margin-bottom: 1rem;
+  overflow: hidden;
+}
+
+.skills__progreso-barra {
+  height: 100%;
+  border-radius: 20px;
+  background: var(--verde-principal);
+  width: 0;
+  transition: width 1.2s cubic-bezier(0.4,0,0.2,1);
+}
+
+.skills__badge {
+  display: inline-block;
+  background: var(--verde-secundario);
+  color: var(--verde-oscuro);
+  border-radius: 16px;
+  padding: 0.3rem 1rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+  margin: 0.2rem 0.3rem;
+  box-shadow: var(--sombra-suave);
+}
+
+@media (max-width: 768px) {
+  .skills__categorias {
+    flex-direction: column;
+    align-items: center;
+  }
+} 

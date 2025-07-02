@@ -1,0 +1,71 @@
+/* =============================
+   Estilos Página Sobre Mí
+   ============================= */
+
+/* Sección principal */
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3rem 1rem 2rem 1rem;
+  background: var(--verde-muy-claro);
+  border-radius: var(--borde-redondeado);
+  box-shadow: var(--sombra-suave);
+  margin-top: 2rem;
+}
+
+.about__foto {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1.2rem;
+  border: 3px solid var(--verde-principal);
+  box-shadow: var(--sombra-suave);
+}
+
+.about__descripcion {
+  font-size: 1.2rem;
+  color: var(--gris-oscuro);
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+/* Timeline visual */
+.about__timeline {
+  width: 100%;
+  max-width: 700px;
+  margin: 2rem auto 0 auto;
+  position: relative;
+}
+
+/* Cards de intereses y soft skills */
+.about__cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.about__card {
+  background: var(--blanco);
+  border-radius: var(--borde-redondeado);
+  box-shadow: var(--sombra-suave);
+  padding: 1.5rem 1.2rem;
+  min-width: 220px;
+  max-width: 300px;
+  text-align: center;
+  transition: var(--transicion-suave);
+}
+.about__card:hover {
+  box-shadow: 0 8px 16px rgba(0,0,0,0.13);
+  transform: translateY(-6px) scale(1.03);
+}
+
+@media (max-width: 768px) {
+  .about__cards {
+    flex-direction: column;
+    align-items: center;
+  }
+} 

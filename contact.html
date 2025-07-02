@@ -3,42 +3,90 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Anthony | Contacto</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="contact.css">
-    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Contacta a Anthony, Desarrollador Full Stack en Ciudad de Panamá.">
+    <title>Contacto | Anthony - Portafolio</title>
+    <!-- Google Fonts: Poppins y Open Sans -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:700,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600&display=swap" rel="stylesheet">
+    <!-- CSS Global y específico -->
+    <link rel="stylesheet" href="global-styles.css">
+    <link rel="stylesheet" href="styles-contact.css">
 </head>
-<body class="contact-bg">
-    <nav class="pixel-nav">
-        <ul>
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="about.html">Sobre mí</a></li>
-            <li><a href="projects.html">Proyectos</a></li>
-            <li><a href="skills.html">Habilidades</a></li>
-            <li class="active"><a href="contact.html">Contacto</a></li>
-        </ul>
-    </nav>
-    <main class="contact-main">
-        <h1 class="pixel-title">¡Contáctame!</h1>
-        <form class="pokedex-form pixel-border" autocomplete="off">
-            <label for="name">Nombre</label>
-            <input type="text" id="name" name="name" class="pixel-input" required>
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" class="pixel-input" required>
-            <label for="message">Mensaje</label>
-            <textarea id="message" name="message" class="pixel-input" rows="4" required></textarea>
-            <button type="submit" class="pixel-btn">Enviar</button>
-        </form>
-        <div id="form-success" class="form-success pixel-border" style="display:none;">¡Mensaje enviado con éxito!</div>
+<body>
+    <header role="banner">
+        <nav class="nav container" aria-label="Navegación principal">
+            <a href="index.html" class="nav__logo" aria-label="Inicio">Anthony</a>
+            <button class="nav__toggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="nav-menu">
+                <span class="nav__hamburguesa"></span>
+            </button>
+            <ul class="nav__menu" id="nav-menu">
+                <li><a href="index.html" class="nav__link">Inicio</a></li>
+                <li><a href="about.html" class="nav__link">Sobre Mí</a></li>
+                <li><a href="skills.html" class="nav__link">Habilidades</a></li>
+                <li><a href="projects.html" class="nav__link">Proyectos</a></li>
+                <li><a href="contact.html" class="nav__link nav__link--activo" aria-current="page">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main role="main">
+        <section class="contact container" aria-label="Contacto">
+            <h1>Contacto</h1>
+            <form class="contact__formulario" id="contact-form" autocomplete="off" novalidate>
+                <div class="contact__campo">
+                    <label for="nombre">Nombre <span aria-label="requerido">*</span></label>
+                    <input type="text" id="nombre" name="nombre" class="contact__input" required aria-required="true" aria-label="Nombre">
+                </div>
+                <div class="contact__campo">
+                    <label for="email">Email <span aria-label="requerido">*</span></label>
+                    <input type="email" id="email" name="email" class="contact__input" required aria-required="true" aria-label="Email">
+                </div>
+                <div class="contact__campo">
+                    <label for="asunto">Asunto</label>
+                    <input type="text" id="asunto" name="asunto" class="contact__input" aria-label="Asunto">
+                </div>
+                <div class="contact__campo">
+                    <label for="mensaje">Mensaje <span aria-label="requerido">*</span></label>
+                    <textarea id="mensaje" name="mensaje" class="contact__textarea" rows="5" required aria-required="true" aria-label="Mensaje"></textarea>
+                </div>
+                <button type="submit" class="btn contact__boton" aria-label="Enviar mensaje">Enviar</button>
+                <div id="form-mensaje" role="alert" style="display:none;"></div>
+            </form>
+            <div class="contact__info">
+                <p><strong>Email:</strong> <a href="mailto:anthony@email.com">anthony@email.com</a></p>
+                <p><strong>LinkedIn:</strong> <a href="#" target="_blank" rel="noopener">linkedin.com/in/anthony</a></p>
+                <p><strong>GitHub:</strong> <a href="#" target="_blank" rel="noopener">github.com/anthony</a></p>
+                <p><strong>Ubicación:</strong> Ciudad de Panamá</p>
+            </div>
+            <div class="contact__redes">
+                <a href="#" class="contact__icono" aria-label="LinkedIn" target="_blank" rel="noopener"></a>
+                <a href="#" class="contact__icono" aria-label="GitHub" target="_blank" rel="noopener"></a>
+                <a href="#" class="contact__icono" aria-label="Email" target="_blank" rel="noopener"></a>
+            </div>
+        </section>
     </main>
-    <footer class="pixel-footer">
-        Desarrollado por Anthony. © 2025
+    <footer role="contentinfo">
+        <div class="footer container">
+            <div class="footer__info">
+                <span>&copy; 2024 Anthony. Todos los derechos reservados.</span>
+                <span class="footer__mensaje">Construido con <span aria-label="corazón" role="img">❤️</span> y código</span>
+            </div>
+            <div class="footer__redes">
+                <a href="#" class="footer__icono" aria-label="LinkedIn" target="_blank" rel="noopener"></a>
+                <a href="#" class="footer__icono" aria-label="GitHub" target="_blank" rel="noopener"></a>
+                <a href="#" class="footer__icono" aria-label="Email" target="_blank" rel="noopener"></a>
+            </div>
+            <nav class="footer__nav" aria-label="Navegación secundaria">
+                <a href="index.html">Inicio</a> · 
+                <a href="about.html">Sobre Mí</a> · 
+                <a href="skills.html">Habilidades</a> · 
+                <a href="projects.html">Proyectos</a> · 
+                <a href="contact.html">Contacto</a>
+            </nav>
+        </div>
     </footer>
-    <div id="loading-screen" class="loading-screen">
-        <img src="img/pokeball-spin.gif" alt="Cargando..." class="pokeball-spin">
-        <span class="loading-text">Cargando...</span>
-    </div>
-    <script src="script.js"></script>
-    <script src="contact.js"></script>
+    <!-- Scripts globales y específicos -->
+    <script src="global-script.js"></script>
+    <script src="script-contact.js"></script>
 </body>
 </html> 
